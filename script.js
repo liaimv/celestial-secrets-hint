@@ -14,6 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
             // Add active class to clicked tab and corresponding content
             this.classList.add('active');
             document.getElementById(targetTab).classList.add('active');
+
+            // Scroll to top when switching tabs
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     });
 
