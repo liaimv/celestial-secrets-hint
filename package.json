@@ -11,7 +11,7 @@
     "build": "npx vite build",
     "preview": "vite preview"
   },
-  "devDependencies": {
+  "dependencies": {
     "vite": "^5.0.0"
   }
 }
