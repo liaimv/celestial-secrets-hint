@@ -15,8 +15,19 @@ document.addEventListener('DOMContentLoaded', function() {
             this.classList.add('active');
             document.getElementById(targetTab).classList.add('active');
 
-            // Scroll to top when switching tabs
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            // Scroll to top when switching tabs - use requestAnimationFrame to ensure DOM is updated
+            requestAnimationFrame(() => {
+                // Scroll immediately to top (instant)
+                window.scrollTo(0, 0);
+                document.documentElement.scrollTop = 0;
+                document.body.scrollTop = 0;
+                // Double-check after layout update to handle any content changes
+                requestAnimationFrame(() => {
+                    window.scrollTo(0, 0);
+                    document.documentElement.scrollTop = 0;
+                    document.body.scrollTop = 0;
+                });
+            });
         });
     });
 
