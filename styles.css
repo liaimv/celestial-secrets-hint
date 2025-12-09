@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
@@ -47,19 +52,18 @@ body {
     background: rgba(74, 158, 255, 0.1);
 }
 
-.tab h2 {
-    font-size: 11px;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.7);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    line-height: 1.2;
+.tab-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    filter: invert(1);
 }
 
-.tab.active h2 {
-    color: #4a9eff;
-    font-weight: 600;
+.tab.active .tab-icon {
+    opacity: 1;
+    filter: invert(1) brightness(1.2);
 }
 
 .tab:active {
@@ -68,12 +72,14 @@ body {
 
 .content {
     width: 100%;
+    overflow-x: hidden;
 }
 
 .tab-content {
     display: none;
     min-height: calc(100vh - 60px);
     padding: 20px;
+    position: relative;
 }
 
 .tab-content.active {
@@ -89,15 +95,203 @@ body {
     font-size: 28px;
     font-weight: 600;
     text-align: center;
-    margin-top: 40px;
+    margin: 0;
     color: #ffffff;
+}
+
+.intro-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.85);
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto 30px auto;
+    padding: 0 20px;
+}
+
+.planets-container {
+    position: absolute;
+    left: 0;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 0;
+    z-index: 100;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+.planet-item {
+    position: relative;
+    width: 100%;
+}
+
+.planet-image {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    transform: translateX(-50%);
+    display: block;
+}
+
+.planet-image[data-planet="saturn"] {
+    transform: translateX(-65%);
+}
+
+.planet-info {
+    position: absolute;
+    left: 50vw;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.planet-info h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    color: #ffffff;
+}
+
+.planet-info p {
+    font-size: 14px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.4;
+}
+
+.constellations-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.constellation-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.constellation-item h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+}
+
+.constellation-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+}
+
+.zodiac-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0 0 20px 0;
+}
+
+.zodiac-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.zodiac-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+}
+
+.zodiac-item h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 0 15px 0;
+    text-align: center;
+}
+
+.zodiac-constellations-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.zodiac-constellations-section h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.zodiac-constellations-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px 0;
+}
+
+.zodiac-constellation-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.zodiac-constellation-item h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+}
+
+.zodiac-constellation-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+}
+
+.zodiac-symbol {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    text-align: center;
 }
 
 /* Mobile optimizations */
 @media (max-width: 480px) {
-    .tab h2 {
-        font-size: 10px;
-        padding: 0 4px;
+    .tab-icon {
+        width: 28px;
+        height: 28px;
     }
     
     .tab {
@@ -111,8 +305,9 @@ body {
 
 /* Landscape orientation */
 @media (orientation: landscape) and (max-height: 500px) {
-    .tab h2 {
-        font-size: 9px;
+    .tab-icon {
+        width: 24px;
+        height: 24px;
     }
     
     .tab {

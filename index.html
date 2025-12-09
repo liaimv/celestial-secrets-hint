@@ -9,16 +9,16 @@
 <body>
     <div class="tabs-container">
         <div class="tab active" data-tab="solar-system">
-            <h2>Solar System</h2>
+            <img src="data/icons/saturn.png" alt="Solar System" class="tab-icon">
         </div>
         <div class="tab" data-tab="southern-constellations">
-            <h2>Southern Star Constellations</h2>
+            <img src="data/icons/southern-stars.png" alt="Southern Star Constellations" class="tab-icon">
         </div>
         <div class="tab" data-tab="zodiac">
-            <h2>Zodiac Sign</h2>
+            <img src="data/icons/capricorn.png" alt="Zodiac Sign" class="tab-icon">
         </div>
         <div class="tab" data-tab="northern-constellations">
-            <h2>Northern Star Constellations</h2>
+            <img src="data/icons/northern-stars.png" alt="Northern Star Constellations" class="tab-icon">
         </div>
     </div>
 
@@ -26,21 +26,224 @@
         <div class="tab-content active" id="solar-system">
             <div class="content-wrapper">
                 <h1>Solar System</h1>
+                <p class="intro-text">The solar system consists of the Sun and the celestial objects that orbit it, including eight planets. They are arranged in order of distance from the Sun, each with its own size, composition, and unique features.</p>
+                <div class="planets-container">
+                    <div class="planet-item">
+                        <img src="data/Planets Images/Sun.png" alt="Sun" class="planet-image" data-planet="sun">
+                        <div class="planet-info">
+                            <h3>Sun</h3>
+                            <p>Center of the solar system</p>
+                        </div>
+                    </div>
+                    <div class="planet-item">
+                        <img src="data/Planets Images/Mercury.png" alt="Mercury" class="planet-image" data-planet="mercury">
+                        <div class="planet-info">
+                            <h3>Mercury</h3>
+                            <p>First planet from the Sun</p>
+                            <p>Smallest planet</p>
+                        </div>
+                    </div>
+                    <div class="planet-item">
+                        <img src="data/Planets Images/Venus.png" alt="Venus" class="planet-image" data-planet="venus">
+                        <div class="planet-info">
+                            <h3>Venus</h3>
+                            <p>Second planet from the Sun</p>
+                            <p>6th largest planet</p>
+                        </div>
+                    </div>
+                    <div class="planet-item">
+                        <img src="data/Planets Images/Earth.png" alt="Earth" class="planet-image" data-planet="earth">
+                        <div class="planet-info">
+                            <h3>Earth</h3>
+                            <p>Third planet from the Sun</p>
+                            <p>5th largest planet</p>
+                        </div>
+                    </div>
+                    <div class="planet-item">
+                        <img src="data/Planets Images/Mars.png" alt="Mars" class="planet-image" data-planet="mars">
+                        <div class="planet-info">
+                            <h3>Mars</h3>
+                            <p>Fourth planet from the Sun</p>
+                            <p>7th largest planet</p>
+                        </div>
+                    </div>
+                    <div class="planet-item">
+                        <img src="data/Planets Images/Jupiter.png" alt="Jupiter" class="planet-image" data-planet="jupiter">
+                        <div class="planet-info">
+                            <h3>Jupiter</h3>
+                            <p>Fifth planet from the Sun</p>
+                            <p>Largest planet</p>
+                        </div>
+                    </div>
+                    <div class="planet-item">
+                        <img src="data/Planets Images/Saturn.png" alt="Saturn" class="planet-image" data-planet="saturn">
+                        <div class="planet-info">
+                            <h3>Saturn</h3>
+                            <p>Sixth planet from the Sun</p>
+                            <p>2nd largest planet</p>
+                        </div>
+                    </div>
+                    <div class="planet-item">
+                        <img src="data/Planets Images/Uranus.png" alt="Uranus" class="planet-image" data-planet="uranus">
+                        <div class="planet-info">
+                            <h3>Uranus</h3>
+                            <p>Seventh planet from the Sun</p>
+                            <p>3rd largest planet</p>
+                        </div>
+                    </div>
+                    <div class="planet-item">
+                        <img src="data/Planets Images/Neptune.png" alt="Neptune" class="planet-image" data-planet="neptune">
+                        <div class="planet-info">
+                            <h3>Neptune</h3>
+                            <p>Eighth planet from the Sun</p>
+                            <p>4th largest planet</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="tab-content" id="southern-constellations">
             <div class="content-wrapper">
                 <h1>Southern Star Constellations</h1>
+                <p class="intro-text">Southern star constellations are patterns of stars visible from the southern hemisphere. These main constellations have been identified and named for their shapes, making it easier to locate and study stars in the southern sky.</p>
+                <div class="constellations-container">
+                    <div class="constellation-item">
+                        <h3>Canis Major</h3>
+                        <img src="data/star_constellations/southern/Canis Major.png" alt="Canis Major" class="constellation-image">
+                    </div>
+                    <div class="constellation-item">
+                        <h3>Centaurus</h3>
+                        <img src="data/star_constellations/southern/Centaurus.png" alt="Centaurus" class="constellation-image">
+                    </div>
+                    <div class="constellation-item">
+                        <h3>Cetus</h3>
+                        <img src="data/star_constellations/southern/Cetus.png" alt="Cetus" class="constellation-image">
+                    </div>
+                    <div class="constellation-item">
+                        <h3>Hydra</h3>
+                        <img src="data/star_constellations/southern/Hydra.png" alt="Hydra" class="constellation-image">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="tab-content" id="zodiac">
             <div class="content-wrapper">
                 <h1>Zodiac Sign</h1>
+                <p class="intro-text">The zodiac is a set of twelve constellations along the Sun's apparent path in the sky. Each zodiac sign has a symbol, an associated element, and a representative constellation.</p>
+                <div class="zodiac-container">
+                    <div class="zodiac-item">
+                        <img src="data/zodiac/Zodiac Wheel.png" alt="Zodiac Wheel" class="zodiac-image">
+                    </div>
+                    <div class="zodiac-item">
+                        <h3>The Four Elements</h3>
+                        <img src="data/zodiac/Greek Elements.png" alt="Greek Elements" class="zodiac-image">
+                    </div>
+                    <div class="zodiac-constellations-section">
+                        <h2>Zodiac Constellations</h2>
+                        <div class="zodiac-constellations-container">
+                            <div class="zodiac-constellation-item">
+                                <h3>Aries</h3>
+                                <img src="data/zodiac/Zodiac Constellations/Aries.png" alt="Aries" class="zodiac-constellation-image">
+                                <p class="zodiac-symbol">Symbol: Ram</p>
+                            </div>
+                            <div class="zodiac-constellation-item">
+                                <h3>Taurus</h3>
+                                <img src="data/zodiac/Zodiac Constellations/Taurus.png" alt="Taurus" class="zodiac-constellation-image">
+                                <p class="zodiac-symbol">Symbol: Bull</p>
+                            </div>
+                            <div class="zodiac-constellation-item">
+                                <h3>Gemini</h3>
+                                <img src="data/zodiac/Zodiac Constellations/Gemini.png" alt="Gemini" class="zodiac-constellation-image">
+                                <p class="zodiac-symbol">Symbol: Twins</p>
+                            </div>
+                            <div class="zodiac-constellation-item">
+                                <h3>Cancer</h3>
+                                <img src="data/zodiac/Zodiac Constellations/Cancer.png" alt="Cancer" class="zodiac-constellation-image">
+                                <p class="zodiac-symbol">Symbol: Crab</p>
+                            </div>
+                            <div class="zodiac-constellation-item">
+                                <h3>Leo</h3>
+                                <img src="data/zodiac/Zodiac Constellations/Leo.png" alt="Leo" class="zodiac-constellation-image">
+                                <p class="zodiac-symbol">Symbol: Lion</p>
+                            </div>
+                            <div class="zodiac-constellation-item">
+                                <h3>Virgo</h3>
+                                <img src="data/zodiac/Zodiac Constellations/Virgo.png" alt="Virgo" class="zodiac-constellation-image">
+                                <p class="zodiac-symbol">Symbol: Maiden</p>
+                            </div>
+                            <div class="zodiac-constellation-item">
+                                <h3>Libra</h3>
+                                <img src="data/zodiac/Zodiac Constellations/Libra.png" alt="Libra" class="zodiac-constellation-image">
+                                <p class="zodiac-symbol">Symbol: Scales</p>
+                            </div>
+                            <div class="zodiac-constellation-item">
+                                <h3>Scorpio</h3>
+                                <img src="data/zodiac/Zodiac Constellations/Scorpio.png" alt="Scorpio" class="zodiac-constellation-image">
+                                <p class="zodiac-symbol">Symbol: Scorpion</p>
+                            </div>
+                            <div class="zodiac-constellation-item">
+                                <h3>Sagittarius</h3>
+                                <img src="data/zodiac/Zodiac Constellations/Sagittarius.png" alt="Sagittarius" class="zodiac-constellation-image">
+                                <p class="zodiac-symbol">Symbol: Centaur Archer</p>
+                            </div>
+                            <div class="zodiac-constellation-item">
+                                <h3>Capricorn</h3>
+                                <img src="data/zodiac/Zodiac Constellations/Capricorn.png" alt="Capricorn" class="zodiac-constellation-image">
+                                <p class="zodiac-symbol">Symbol: Sea-goat</p>
+                            </div>
+                            <div class="zodiac-constellation-item">
+                                <h3>Aquarius</h3>
+                                <img src="data/zodiac/Zodiac Constellations/Aquarius.png" alt="Aquarius" class="zodiac-constellation-image">
+                                <p class="zodiac-symbol">Symbol: Water-bearer</p>
+                            </div>
+                            <div class="zodiac-constellation-item">
+                                <h3>Pisces</h3>
+                                <img src="data/zodiac/Zodiac Constellations/Pisces.png" alt="Pisces" class="zodiac-constellation-image">
+                                <p class="zodiac-symbol">Symbol: Fish</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="tab-content" id="northern-constellations">
             <div class="content-wrapper">
                 <h1>Northern Star Constellations</h1>
+                <p class="intro-text">Northern star constellations are patterns of stars visible from the northern hemisphere. On this page, you can explore not only the main constellations but also the Greek alphabet labeling system. Stars are labeled with Greek letters, with Alpha for the brightest star, Beta for the next brightest, and so on. This system helps classify stars by brightness within each constellation. Note that some stars do not have a Greek letter designation.</p>
+                <div class="constellations-container">
+                    <div class="constellation-item">
+                        <h3>Andromeda</h3>
+                        <img src="data/star_constellations/northern/Andromeda.png" alt="Andromeda" class="constellation-image">
+                    </div>
+                    <div class="constellation-item">
+                        <h3>Auriga</h3>
+                        <img src="data/star_constellations/northern/Auriga.png" alt="Auriga" class="constellation-image">
+                    </div>
+                    <div class="constellation-item">
+                        <h3>Cassiopeia</h3>
+                        <img src="data/star_constellations/northern/Cassiopeia.png" alt="Cassiopeia" class="constellation-image">
+                    </div>
+                    <div class="constellation-item">
+                        <h3>Cygnus</h3>
+                        <img src="data/star_constellations/northern/Cygnus.png" alt="Cygnus" class="constellation-image">
+                    </div>
+                    <div class="constellation-item">
+                        <h3>Pegasus</h3>
+                        <img src="data/star_constellations/northern/Pegasus.png" alt="Pegasus" class="constellation-image">
+                    </div>
+                    <div class="constellation-item">
+                        <h3>Perseus</h3>
+                        <img src="data/star_constellations/northern/Perseus.png" alt="Perseus" class="constellation-image">
+                    </div>
+                    <div class="constellation-item">
+                        <h3>Ursa Major</h3>
+                        <img src="data/star_constellations/northern/Ursa Major.png" alt="Ursa Major" class="constellation-image">
+                    </div>
+                    <div class="constellation-item">
+                        <h3>Ursa Minor</h3>
+                        <img src="data/star_constellations/northern/Ursa Minor.png" alt="Ursa Minor" class="constellation-image">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
